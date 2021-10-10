@@ -104,7 +104,7 @@
             this.btnSettings.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnSettings.Size = new System.Drawing.Size(220, 60);
             this.btnSettings.TabIndex = 6;
-            this.btnSettings.Text = " Settings";
+            this.btnSettings.Text = " About";
             this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSettings.UseVisualStyleBackColor = true;

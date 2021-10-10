@@ -43,72 +43,65 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(32, 220);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Location = new System.Drawing.Point(24, 132);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(347, 24);
+            this.comboBox1.Size = new System.Drawing.Size(261, 21);
             this.comboBox1.TabIndex = 0;
             // 
             // lbl2
             // 
             this.lbl2.AutoSize = true;
             this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.Location = new System.Drawing.Point(28, 76);
-            this.lbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl2.Location = new System.Drawing.Point(21, 62);
             this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(93, 20);
+            this.lbl2.Size = new System.Drawing.Size(78, 17);
             this.lbl2.TabIndex = 4;
             this.lbl2.Text = "Student ID:";
             // 
             // tbUStudent
             // 
             this.tbUStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUStudent.Location = new System.Drawing.Point(168, 76);
-            this.tbUStudent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbUStudent.Location = new System.Drawing.Point(126, 62);
             this.tbUStudent.Multiline = true;
             this.tbUStudent.Name = "tbUStudent";
-            this.tbUStudent.Size = new System.Drawing.Size(211, 24);
+            this.tbUStudent.Size = new System.Drawing.Size(159, 20);
             this.tbUStudent.TabIndex = 5;
             // 
             // lbl3
             // 
             this.lbl3.AutoSize = true;
             this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3.Location = new System.Drawing.Point(28, 128);
-            this.lbl3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl3.Location = new System.Drawing.Point(21, 191);
             this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(125, 20);
+            this.lbl3.Size = new System.Drawing.Size(105, 17);
             this.lbl3.TabIndex = 6;
             this.lbl3.Text = "Update Details:";
             // 
             // tbUDetail
             // 
             this.tbUDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUDetail.Location = new System.Drawing.Point(161, 128);
-            this.tbUDetail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbUDetail.Location = new System.Drawing.Point(126, 188);
             this.tbUDetail.Multiline = true;
             this.tbUDetail.Name = "tbUDetail";
-            this.tbUDetail.Size = new System.Drawing.Size(211, 24);
+            this.tbUDetail.Size = new System.Drawing.Size(159, 20);
             this.tbUDetail.TabIndex = 7;
             // 
             // lbl1
             // 
             this.lbl1.AutoSize = true;
             this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(111, 11);
-            this.lbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl1.Location = new System.Drawing.Point(83, 9);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(335, 31);
+            this.lbl1.Size = new System.Drawing.Size(266, 25);
             this.lbl1.TabIndex = 8;
             this.lbl1.Text = "Update a Student\'s Details";
             // 
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(447, 60);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClear.Location = new System.Drawing.Point(335, 49);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(100, 60);
+            this.btnClear.Size = new System.Drawing.Size(75, 49);
             this.btnClear.TabIndex = 9;
             this.btnClear.Text = "Clear Details";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -117,10 +110,9 @@
             // btnSubmit
             // 
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(447, 128);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSubmit.Location = new System.Drawing.Point(335, 104);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(100, 60);
+            this.btnSubmit.Size = new System.Drawing.Size(75, 49);
             this.btnSubmit.TabIndex = 10;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
@@ -129,10 +121,9 @@
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(447, 196);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBack.Location = new System.Drawing.Point(335, 159);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(100, 60);
+            this.btnBack.Size = new System.Drawing.Size(75, 49);
             this.btnBack.TabIndex = 11;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -142,18 +133,17 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 196);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(21, 112);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 20);
+            this.label1.Size = new System.Drawing.Size(164, 17);
             this.label1.TabIndex = 12;
             this.label1.Text = "Select column to update:";
             // 
             // Update_Student
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 273);
+            this.ClientSize = new System.Drawing.Size(439, 228);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSubmit);
@@ -165,9 +155,8 @@
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.comboBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximumSize = new System.Drawing.Size(601, 320);
-            this.MinimumSize = new System.Drawing.Size(601, 320);
+            this.MaximumSize = new System.Drawing.Size(455, 267);
+            this.MinimumSize = new System.Drawing.Size(455, 267);
             this.Name = "Update_Student";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update_Student";

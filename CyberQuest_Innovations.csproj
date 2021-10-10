@@ -127,11 +127,11 @@
     <Compile Include="Forms\Main\Records.Designer.cs">
       <DependentUpon>Records.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Main\Settings.cs">
+    <Compile Include="Forms\Main\About.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Main\Settings.Designer.cs">
-      <DependentUpon>Settings.cs</DependentUpon>
+    <Compile Include="Forms\Main\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Student\Remove_Student.cs">
       <SubType>Form</SubType>
@@ -190,8 +190,8 @@
     <EmbeddedResource Include="Forms\Room\Remove_Room.resx">
       <DependentUpon>Remove_Room.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Main\Settings.resx">
-      <DependentUpon>Settings.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Main\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Student\Add_Student.resx">
       <DependentUpon>Add_Student.cs</DependentUpon>
@@ -230,11 +230,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\Admin\" />
-    <Folder Include="Forms\Records\" />
-    <Folder Include="Forms\Settings\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Records.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

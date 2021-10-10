@@ -13,7 +13,6 @@ namespace CyberQuest_Innovations.Forms
 {
     public partial class Update_Student : Form
     {
-        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project\Project\CyberQuest_Innovations\CyberQuest_Innovations\Forms\Student\Database1.mdf;Integrated Security=True";
         SqlConnection conn;
         SqlCommand comm;
 
@@ -31,9 +30,7 @@ namespace CyberQuest_Innovations.Forms
 
         private void Update_Student_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(conStr);
-            conn.Open();
-            conn.Close();
+
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -45,38 +42,25 @@ namespace CyberQuest_Innovations.Forms
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-
             if (comboBox1.SelectedIndex == 0)
-            {
-                columName = "Room_Number";
-                IUpdate = int.Parse(tbUDetail.Text);
-            }
-
-            if (comboBox1.SelectedIndex == 1)
-            {
-                columName = "Field_of_Study_ID";
-                IUpdate = int.Parse(tbUDetail.Text);
-            }
-
-            if (comboBox1.SelectedIndex == 2)
             {
                 columName = "Name";
                 SUpdate = tbUDetail.Text;
             }
 
-            if (comboBox1.SelectedIndex == 3)
+            if (comboBox1.SelectedIndex == 1)
             {
                 columName = "Last_Name";
                 SUpdate = tbUDetail.Text;
             }
 
-            if (comboBox1.SelectedIndex == 4)
+            if (comboBox1.SelectedIndex == 2)
             {
                 columName = "Cell_Num";
                 SUpdate = tbUDetail.Text;
             }
 
-            if (comboBox1.SelectedIndex == 5)
+            if (comboBox1.SelectedIndex == 3)
             {
                 columName = "Email_Address";
                 SUpdate = tbUDetail.Text;

@@ -14,7 +14,6 @@ namespace CyberQuest_Innovations.Forms.Student
     public partial class Remove_Student : Form
     {
 
-        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances\MSSQLLocalDB\StudentPlacementSystem_DB.mdf;Integrated Security=True;Connect Timeout=30";
         SqlConnection conn;
         SqlCommand comm;
 
@@ -26,10 +25,6 @@ namespace CyberQuest_Innovations.Forms.Student
             this.Text = string.Empty;
             this.ControlBox = false;
 
-            //Connect tot the database on load 
-            conn = new SqlConnection(conStr);
-            conn.Open();
-            conn.Close();
         }
 
 

@@ -40,9 +40,8 @@ namespace CyberQuest_Innovations.Forms
             conn.Open();
 
             SqlCommand cmd;
-            string sql = "UPDATE Room SET Student_ID = @sid WHERE Corridor_ID = @cor AND Room_Number = @rn";
+            string sql = "DELETE FROM Room WHERE Corridor_ID = @cor AND Room_Number = @rn";
             cmd = new SqlCommand(sql, conn);
-            cmd.Parameters.Add("@sid", "");
             cmd.Parameters.Add("@cor", "");
             cmd.Parameters.Add("@rn", "");
             cmd.ExecuteNonQuery();
@@ -65,10 +64,10 @@ namespace CyberQuest_Innovations.Forms
             dt.Columns.Add("Corridor_Name", typeof(string)); 
             dt.Columns.Add("Room_Num", typeof(int));
             dt.Load(reader);
-            cbCorridor.ValueMember = "Corridor_Name"; //Adds Corridor_Name to the combobox
-            cbCorridor.DataSource = dt;
-            cbRoom.ValueMember = "Room_Num"; //Adds Room_Num to combobox
-            cbRoom.DataSource = dt;
+            //cbCorridor.ValueMember = "Corridor_Name"; //Adds Corridor_Name to the combobox
+            //cbCorridor.DataSource = dt;
+            //cbRoom.ValueMember = "Room_Num"; //Adds Room_Num to combobox
+            //cbRoom.DataSource = dt;
 
             conn.Close();
         }

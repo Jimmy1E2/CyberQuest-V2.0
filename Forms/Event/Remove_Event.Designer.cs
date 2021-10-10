@@ -30,9 +30,9 @@
         {
             this.lblTitle = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
-            this.cal2 = new System.Windows.Forms.MonthCalendar();
             this.btnEBack = new System.Windows.Forms.Button();
             this.btnERemove = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -49,20 +49,11 @@
             // 
             this.lbl1.AutoSize = true;
             this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(12, 68);
+            this.lbl1.Location = new System.Drawing.Point(12, 82);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(164, 17);
+            this.lbl1.Size = new System.Drawing.Size(170, 17);
             this.lbl1.TabIndex = 2;
-            this.lbl1.Text = "Select a Date to remove:";
-            // 
-            // cal2
-            // 
-            this.cal2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cal2.Location = new System.Drawing.Point(15, 94);
-            this.cal2.MaxDate = new System.DateTime(2060, 12, 31, 0, 0, 0, 0);
-            this.cal2.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
-            this.cal2.Name = "cal2";
-            this.cal2.TabIndex = 3;
+            this.lbl1.Text = "Select a Event to remove:";
             // 
             // btnEBack
             // 
@@ -86,15 +77,23 @@
             this.btnERemove.UseVisualStyleBackColor = true;
             this.btnERemove.Click += new System.EventHandler(this.btnERemove_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(15, 102);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(227, 21);
+            this.comboBox1.TabIndex = 13;
+            // 
             // Remove_Event
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(263, 339);
             this.ControlBox = false;
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnERemove);
             this.Controls.Add(this.btnEBack);
-            this.Controls.Add(this.cal2);
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.lblTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -110,8 +109,8 @@
 
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lbl1;
-        private System.Windows.Forms.MonthCalendar cal2;
         private System.Windows.Forms.Button btnEBack;
         private System.Windows.Forms.Button btnERemove;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

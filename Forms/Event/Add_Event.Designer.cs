@@ -37,7 +37,7 @@
             this.btnESubmit = new System.Windows.Forms.Button();
             this.btnEClear = new System.Windows.Forms.Button();
             this.btnEBack = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtp1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -131,12 +131,12 @@
             this.btnEBack.UseVisualStyleBackColor = true;
             this.btnEBack.Click += new System.EventHandler(this.btnEBack_Click);
             // 
-            // dateTimePicker1
+            // dtp1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(15, 87);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(227, 20);
-            this.dateTimePicker1.TabIndex = 10;
+            this.dtp1.Location = new System.Drawing.Point(15, 87);
+            this.dtp1.Name = "dtp1";
+            this.dtp1.Size = new System.Drawing.Size(227, 20);
+            this.dtp1.TabIndex = 10;
             // 
             // Add_Event
             // 
@@ -144,7 +144,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 329);
             this.ControlBox = false;
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtp1);
             this.Controls.Add(this.btnEBack);
             this.Controls.Add(this.btnEClear);
             this.Controls.Add(this.btnESubmit);
@@ -174,6 +174,6 @@
         private System.Windows.Forms.Button btnESubmit;
         private System.Windows.Forms.Button btnEClear;
         private System.Windows.Forms.Button btnEBack;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtp1;
     }
 }

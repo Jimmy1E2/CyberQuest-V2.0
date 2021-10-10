@@ -44,7 +44,6 @@
             this.tb3 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAddCor = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnRemoveCor = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,8 +51,13 @@
             this.tb5 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.tb4 = new System.Windows.Forms.TextBox();
+            this.tb6 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tb7 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tb8 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -62,7 +66,8 @@
             this.textBox1.Location = new System.Drawing.Point(12, 23);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(198, 254);
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(198, 356);
             this.textBox1.TabIndex = 0;
             // 
             // lbl1
@@ -110,6 +115,7 @@
             this.tbPass.Location = new System.Drawing.Point(26, 122);
             this.tbPass.Multiline = true;
             this.tbPass.Name = "tbPass";
+            this.tbPass.PasswordChar = '*';
             this.tbPass.Size = new System.Drawing.Size(166, 20);
             this.tbPass.TabIndex = 5;
             // 
@@ -129,23 +135,25 @@
             this.tbPass1.Location = new System.Drawing.Point(27, 175);
             this.tbPass1.Multiline = true;
             this.tbPass1.Name = "tbPass1";
+            this.tbPass1.PasswordChar = '*';
             this.tbPass1.Size = new System.Drawing.Size(165, 20);
             this.tbPass1.TabIndex = 7;
             // 
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(27, 216);
+            this.btnClear.Location = new System.Drawing.Point(26, 314);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 52);
             this.btnClear.TabIndex = 8;
             this.btnClear.Text = "Clear Fields";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSubmit
             // 
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(117, 216);
+            this.btnSubmit.Location = new System.Drawing.Point(117, 314);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(75, 52);
             this.btnSubmit.TabIndex = 9;
@@ -159,7 +167,8 @@
             this.textBox2.Location = new System.Drawing.Point(260, 23);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(185, 254);
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(185, 356);
             this.textBox2.TabIndex = 10;
             // 
             // lbl2
@@ -195,7 +204,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(267, 153);
+            this.label2.Location = new System.Drawing.Point(267, 213);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 17);
             this.label2.TabIndex = 14;
@@ -204,31 +213,24 @@
             // btnAddCor
             // 
             this.btnAddCor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCor.Location = new System.Drawing.Point(270, 86);
+            this.btnAddCor.Location = new System.Drawing.Point(270, 129);
             this.btnAddCor.Name = "btnAddCor";
-            this.btnAddCor.Size = new System.Drawing.Size(166, 23);
+            this.btnAddCor.Size = new System.Drawing.Size(166, 43);
             this.btnAddCor.TabIndex = 15;
             this.btnAddCor.Text = "Submit";
             this.btnAddCor.UseVisualStyleBackColor = true;
             this.btnAddCor.Click += new System.EventHandler(this.btnAddCor_Click);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(270, 173);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(166, 21);
-            this.comboBox1.TabIndex = 16;
-            // 
             // btnRemoveCor
             // 
             this.btnRemoveCor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveCor.Location = new System.Drawing.Point(270, 216);
+            this.btnRemoveCor.Location = new System.Drawing.Point(270, 314);
             this.btnRemoveCor.Name = "btnRemoveCor";
             this.btnRemoveCor.Size = new System.Drawing.Size(166, 52);
             this.btnRemoveCor.TabIndex = 17;
             this.btnRemoveCor.Text = "Remove";
             this.btnRemoveCor.UseVisualStyleBackColor = true;
+            this.btnRemoveCor.Click += new System.EventHandler(this.btnRemoveCor_Click);
             // 
             // textBox4
             // 
@@ -236,7 +238,8 @@
             this.textBox4.Location = new System.Drawing.Point(488, 23);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(190, 254);
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(190, 356);
             this.textBox4.TabIndex = 18;
             // 
             // label3
@@ -271,9 +274,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(503, 86);
+            this.button1.Location = new System.Drawing.Point(503, 129);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 23);
+            this.button1.Size = new System.Drawing.Size(166, 43);
             this.button1.TabIndex = 24;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
@@ -283,37 +286,91 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(500, 155);
+            this.label4.Location = new System.Drawing.Point(500, 213);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(117, 17);
             this.label4.TabIndex = 25;
             this.label4.Text = "Remove a Room:";
             // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(503, 173);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(166, 21);
-            this.comboBox2.TabIndex = 26;
-            // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(503, 216);
+            this.button2.Location = new System.Drawing.Point(503, 314);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(166, 52);
             this.button2.TabIndex = 27;
             this.button2.Text = "Remove";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // tb4
+            // 
+            this.tb4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb4.Location = new System.Drawing.Point(270, 233);
+            this.tb4.Multiline = true;
+            this.tb4.Name = "tb4";
+            this.tb4.Size = new System.Drawing.Size(166, 20);
+            this.tb4.TabIndex = 28;
+            // 
+            // tb6
+            // 
+            this.tb6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb6.Location = new System.Drawing.Point(503, 233);
+            this.tb6.Multiline = true;
+            this.tb6.Name = "tb6";
+            this.tb6.Size = new System.Drawing.Size(166, 20);
+            this.tb6.TabIndex = 29;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(500, 83);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 17);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Room Number:";
+            // 
+            // tb7
+            // 
+            this.tb7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb7.Location = new System.Drawing.Point(503, 99);
+            this.tb7.Multiline = true;
+            this.tb7.Name = "tb7";
+            this.tb7.Size = new System.Drawing.Size(166, 20);
+            this.tb7.TabIndex = 31;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(500, 256);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(80, 17);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "Corridor ID:";
+            // 
+            // tb8
+            // 
+            this.tb8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb8.Location = new System.Drawing.Point(503, 276);
+            this.tb8.Multiline = true;
+            this.tb8.Name = "tb8";
+            this.tb8.Size = new System.Drawing.Size(166, 20);
+            this.tb8.TabIndex = 33;
             // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 294);
+            this.ClientSize = new System.Drawing.Size(690, 406);
+            this.Controls.Add(this.tb8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.tb7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.tb6);
+            this.Controls.Add(this.tb4);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tb5);
@@ -321,7 +378,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.btnRemoveCor);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnAddCor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb3);
@@ -363,7 +419,6 @@
         private System.Windows.Forms.TextBox tb3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAddCor;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button btnRemoveCor;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label3;
@@ -371,7 +426,12 @@
         private System.Windows.Forms.TextBox tb5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox tb4;
+        private System.Windows.Forms.TextBox tb6;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tb7;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox tb8;
     }
 }

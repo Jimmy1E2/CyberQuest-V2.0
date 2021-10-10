@@ -37,18 +37,21 @@ namespace CyberQuest_Innovations.Forms.Student
         private void btnSubmit_Click(object sender, EventArgs e)
         {
 
-            if (int.TryParse(tbRStudent.Text, out student_ID))
-            {
-                //Delete the record that corresponds to the student number given and close the form after displaying a message
-                this.Close();
-            }
-            else
-            {
-                //Display a message if data type is incofrect and clear it and reset focus to the textbox
-                MessageBox.Show("Incorrect dataype for Student_ID. Try an integer.");
-                tbRStudent.Clear();
-                tbRStudent.Focus();
-            }
+            Form1 f1 = new Form1();
+            string constring = f1.constring;
+            SqlConnection conn = new SqlConnection(constring);
+
+            conn.Open();
+
+            SqlCommand cmd;
+            string sql = "DELETE FROM Students WHERE Student_ID = @studentid";
+            cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@studentid", tbRStudent.Text);
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+
+            tbRStudent.Clear();
 
 
         }

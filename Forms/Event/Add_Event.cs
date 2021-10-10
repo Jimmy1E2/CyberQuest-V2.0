@@ -32,7 +32,7 @@ namespace CyberQuest_Innovations.Forms
 
         private void btnESubmit_Click(object sender, EventArgs e)
         {
-            this.Close();
+           
         }
     }
 }

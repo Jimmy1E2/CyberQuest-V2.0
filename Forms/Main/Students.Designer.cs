@@ -38,19 +38,17 @@
             // dbView
             // 
             this.dbView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dbView.Location = new System.Drawing.Point(16, 15);
-            this.dbView.Margin = new System.Windows.Forms.Padding(4);
+            this.dbView.Location = new System.Drawing.Point(12, 12);
             this.dbView.Name = "dbView";
             this.dbView.RowHeadersWidth = 51;
-            this.dbView.Size = new System.Drawing.Size(699, 289);
+            this.dbView.Size = new System.Drawing.Size(524, 235);
             this.dbView.TabIndex = 0;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(749, 16);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Location = new System.Drawing.Point(562, 13);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(161, 55);
+            this.btnAdd.Size = new System.Drawing.Size(121, 45);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "Add Student";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -58,10 +56,9 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(749, 134);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdate.Location = new System.Drawing.Point(562, 109);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(161, 55);
+            this.btnUpdate.Size = new System.Drawing.Size(121, 45);
             this.btnUpdate.TabIndex = 2;
             this.btnUpdate.Text = "Update Student Details";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -69,10 +66,9 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(749, 249);
-            this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRemove.Location = new System.Drawing.Point(562, 202);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(161, 55);
+            this.btnRemove.Size = new System.Drawing.Size(121, 45);
             this.btnRemove.TabIndex = 3;
             this.btnRemove.Text = "Remove Student";
             this.btnRemove.UseVisualStyleBackColor = true;
@@ -80,18 +76,18 @@
             // 
             // Students
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(931, 334);
+            this.ClientSize = new System.Drawing.Size(698, 271);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dbView);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(946, 371);
+            this.MinimumSize = new System.Drawing.Size(714, 309);
             this.Name = "Students";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Students";
+            this.Load += new System.EventHandler(this.Students_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dbView)).EndInit();
             this.ResumeLayout(false);
 

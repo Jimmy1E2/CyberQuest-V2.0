@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnAdmin = new System.Windows.Forms.Button();
@@ -46,6 +47,7 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitle.SuspendLayout();
@@ -107,6 +109,7 @@
             this.btnSettings.Text = " About";
             this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btnSettings, "Click here to view extra information about the company");
             this.btnSettings.UseVisualStyleBackColor = true;
             this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
@@ -127,6 +130,7 @@
             this.btnRecords.Text = " Records";
             this.btnRecords.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecords.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btnRecords, "Click here to view all the records of the database");
             this.btnRecords.UseVisualStyleBackColor = true;
             this.btnRecords.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -147,6 +151,7 @@
             this.btnRooms.Text = " Room";
             this.btnRooms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRooms.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btnRooms, "Click here to assign a room to a student and to unassign a room");
             this.btnRooms.UseVisualStyleBackColor = true;
             this.btnRooms.Click += new System.EventHandler(this.btnRooms_Click);
             // 
@@ -167,6 +172,7 @@
             this.btnEvents.Text = " Event";
             this.btnEvents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEvents.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btnEvents, "Click here to add new events and to view current events");
             this.btnEvents.UseVisualStyleBackColor = true;
             this.btnEvents.Click += new System.EventHandler(this.btnEvents_Click);
             // 
@@ -187,6 +193,8 @@
             this.btnStudents.Text = " Students";
             this.btnStudents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStudents.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btnStudents, "Click here to add new students, to remove old students and to change student\'s de" +
+        "tails");
             this.btnStudents.UseVisualStyleBackColor = true;
             this.btnStudents.Click += new System.EventHandler(this.btnStudents_Click);
             // 
@@ -239,6 +247,7 @@
             this.btnMin.Size = new System.Drawing.Size(30, 30);
             this.btnMin.TabIndex = 4;
             this.btnMin.Text = "O";
+            this.toolTip1.SetToolTip(this.btnMin, "Minimize");
             this.btnMin.UseVisualStyleBackColor = true;
             this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
@@ -254,6 +263,7 @@
             this.btnMax.Size = new System.Drawing.Size(30, 30);
             this.btnMax.TabIndex = 3;
             this.btnMax.Text = "O";
+            this.toolTip1.SetToolTip(this.btnMax, "Maximize");
             this.btnMax.UseVisualStyleBackColor = true;
             this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
             // 
@@ -269,6 +279,7 @@
             this.btnClose.Size = new System.Drawing.Size(30, 30);
             this.btnClose.TabIndex = 2;
             this.btnClose.Text = "O";
+            this.toolTip1.SetToolTip(this.btnClose, "Exit");
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -284,6 +295,7 @@
             this.btnCloseChildForm.Size = new System.Drawing.Size(75, 80);
             this.btnCloseChildForm.TabIndex = 1;
             this.btnCloseChildForm.Text = "X";
+            this.toolTip1.SetToolTip(this.btnCloseChildForm, "Click here to close the current open tab");
             this.btnCloseChildForm.UseVisualStyleBackColor = true;
             this.btnCloseChildForm.Click += new System.EventHandler(this.btnCloseChildForm_Click);
             // 
@@ -363,6 +375,7 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnAdmin;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

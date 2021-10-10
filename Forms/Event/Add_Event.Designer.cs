@@ -30,7 +30,6 @@
         {
             this.lblTitle = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
-            this.cal2 = new System.Windows.Forms.MonthCalendar();
             this.lbl2 = new System.Windows.Forms.Label();
             this.tbEventName = new System.Windows.Forms.TextBox();
             this.lbl3 = new System.Windows.Forms.Label();
@@ -38,6 +37,7 @@
             this.btnESubmit = new System.Windows.Forms.Button();
             this.btnEClear = new System.Windows.Forms.Button();
             this.btnEBack = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -59,15 +59,6 @@
             this.lbl1.Size = new System.Drawing.Size(187, 17);
             this.lbl1.TabIndex = 1;
             this.lbl1.Text = "Select a new Date for Event:";
-            // 
-            // cal2
-            // 
-            this.cal2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cal2.Location = new System.Drawing.Point(15, 87);
-            this.cal2.MaxDate = new System.DateTime(2060, 12, 31, 0, 0, 0, 0);
-            this.cal2.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
-            this.cal2.Name = "cal2";
-            this.cal2.TabIndex = 2;
             // 
             // lbl2
             // 
@@ -140,12 +131,20 @@
             this.btnEBack.UseVisualStyleBackColor = true;
             this.btnEBack.Click += new System.EventHandler(this.btnEBack_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(15, 87);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(227, 20);
+            this.dateTimePicker1.TabIndex = 10;
+            // 
             // Add_Event
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 329);
             this.ControlBox = false;
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnEBack);
             this.Controls.Add(this.btnEClear);
             this.Controls.Add(this.btnESubmit);
@@ -153,7 +152,6 @@
             this.Controls.Add(this.lbl3);
             this.Controls.Add(this.tbEventName);
             this.Controls.Add(this.lbl2);
-            this.Controls.Add(this.cal2);
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.lblTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -169,7 +167,6 @@
 
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lbl1;
-        private System.Windows.Forms.MonthCalendar cal2;
         private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.TextBox tbEventName;
         private System.Windows.Forms.Label lbl3;
@@ -177,5 +174,6 @@
         private System.Windows.Forms.Button btnESubmit;
         private System.Windows.Forms.Button btnEClear;
         private System.Windows.Forms.Button btnEBack;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

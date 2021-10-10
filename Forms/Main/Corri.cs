@@ -44,19 +44,20 @@ namespace CyberQuest_Innovations.Forms
 
         public void load()
         {
-           /* conn = new SqlConnection(conStr);
+            Form1 f1 = new Form1();
+            string constring = f1.constring;
+            string select = "SELECT * FROM Room";
+            SqlConnection conn = new SqlConnection(constring);
+            SqlDataAdapter adap = new SqlDataAdapter(select, conn);
+            DataSet ds = new DataSet();
+
             conn.Open();
 
-            adapt = new SqlDataAdapter();
-            ds = new DataSet();
-            string sql = "SELECT * FROM ROOM";
-            command = new SqlCommand(sql, conn);
-            adapt.SelectCommand = command;
-            adapt.Fill(ds, "SourceTable");
-            dataGridView1.DataSource = ds;
-            dataGridView1.DataMember = "SourceTable";
+            adap.Fill(ds, "Room");
+            dgv1.DataSource = ds;
+            dgv1.DataMember = "Room";
 
-            conn.Close();*/
+            conn.Close();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

@@ -29,32 +29,23 @@ namespace CyberQuest_Innovations.Forms
         private void ShowAll()
         {
 
-            //conn.Open();
-            //adap = new SqlDataAdapter();
-            //ds = new DataSet();
-
-            //string sql = "SELECT * FROM Students";
-            //comm = new SqlCommand(sql, conn);
-
-            //adap.SelectCommand = comm;
-            //adap.Fill(ds, "Students");
-
-            //dbView.DataSource = ds;
-            //dbView.DataMember = "Students";
-
-            //conn.Close();
         }
 
         private void Students_Load(object sender, EventArgs e)
         {
             conn = new SqlConnection(conStr);
             //ShowAll();
+
+            load();
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Add_Student Astd = new Add_Student();
             Astd.ShowDialog();
+
+            load();
 
             //ShowAll();
 
@@ -64,7 +55,8 @@ namespace CyberQuest_Innovations.Forms
         {
             Update_Student Ustd = new Update_Student();
             Ustd.ShowDialog();
-            ShowAll();
+
+            load();
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
@@ -72,19 +64,33 @@ namespace CyberQuest_Innovations.Forms
             Remove_Student Rstd = new Remove_Student();
             Rstd.ShowDialog();
 
-            conn.Open();
-
-            string sql = $"DELETE FROM STUDENT WHERE Stuent_ID = {Rstd.student_ID}";
-            comm = new SqlCommand(sql, conn);
-            comm.ExecuteNonQuery();
-            conn.Close();
-
-            ShowAll();
-
             MessageBox.Show("You successfully removed the all records linked to the following Student_ID: " + Rstd.student_ID);
+
+            load();
 
         }
 
+        private void Students_Load_1(object sender, EventArgs e)
+        {
+            load();
+        }
 
+        public void load()
+        {
+            Form1 f1 = new Form1();
+            string constring = f1.constring;
+            string select = "SELECT * FROM Students";
+            SqlConnection conn = new SqlConnection(constring);
+            SqlDataAdapter adap = new SqlDataAdapter(select, conn);
+            DataSet ds = new DataSet();
+
+            conn.Open();
+
+            adap.Fill(ds, "Students");
+            dbView.DataSource = ds;
+            dbView.DataMember = "Students";
+
+            conn.Close();
+        }
     }
 }

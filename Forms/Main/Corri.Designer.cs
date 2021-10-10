@@ -39,30 +39,27 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 15);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(644, 293);
+            this.dataGridView1.Size = new System.Drawing.Size(483, 238);
             this.dataGridView1.TabIndex = 2;
             // 
             // tbCor_Description
             // 
             this.tbCor_Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCor_Description.Location = new System.Drawing.Point(15, 327);
-            this.tbCor_Description.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCor_Description.Location = new System.Drawing.Point(11, 266);
             this.tbCor_Description.Multiline = true;
             this.tbCor_Description.Name = "tbCor_Description";
-            this.tbCor_Description.Size = new System.Drawing.Size(644, 102);
+            this.tbCor_Description.Size = new System.Drawing.Size(484, 84);
             this.tbCor_Description.TabIndex = 5;
             // 
             // btnDescription
             // 
             this.btnDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDescription.Location = new System.Drawing.Point(700, 327);
-            this.btnDescription.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDescription.Location = new System.Drawing.Point(525, 266);
             this.btnDescription.Name = "btnDescription";
-            this.btnDescription.Size = new System.Drawing.Size(213, 63);
+            this.btnDescription.Size = new System.Drawing.Size(160, 51);
             this.btnDescription.TabIndex = 6;
             this.btnDescription.Text = "Corridor Decription";
             this.btnDescription.UseVisualStyleBackColor = true;
@@ -71,22 +68,20 @@
             // btnRAdd
             // 
             this.btnRAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRAdd.Location = new System.Drawing.Point(700, 15);
-            this.btnRAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRAdd.Location = new System.Drawing.Point(525, 12);
             this.btnRAdd.Name = "btnRAdd";
-            this.btnRAdd.Size = new System.Drawing.Size(213, 63);
+            this.btnRAdd.Size = new System.Drawing.Size(160, 51);
             this.btnRAdd.TabIndex = 7;
-            this.btnRAdd.Text = "Add a Room";
+            this.btnRAdd.Text = "Assign Room";
             this.btnRAdd.UseVisualStyleBackColor = true;
             this.btnRAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnRemove
             // 
             this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemove.Location = new System.Drawing.Point(700, 97);
-            this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRemove.Location = new System.Drawing.Point(525, 79);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(213, 63);
+            this.btnRemove.Size = new System.Drawing.Size(160, 51);
             this.btnRemove.TabIndex = 8;
             this.btnRemove.Text = "Remove a Room";
             this.btnRemove.UseVisualStyleBackColor = true;
@@ -94,15 +89,14 @@
             // 
             // Corri
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnRAdd);
             this.Controls.Add(this.btnDescription);
             this.Controls.Add(this.tbCor_Description);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Corri";
             this.Text = "Room";
             this.Load += new System.EventHandler(this.Corri_Load);

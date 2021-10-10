@@ -28,39 +28,29 @@ namespace CyberQuest_Innovations.Forms
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            tbCor_Name.Clear();
-            tbRoom_Number.Clear();
+            tbSID.Clear();
+
         }
 
 
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            try
-            {
-                conn = new SqlConnection(conStr);
+            Form1 f1 = new Form1();
+            string constring = f1.constring;
+            SqlConnection conn = new SqlConnection(constring);
 
-                string corName = tbCor_Name.Text;
-                string corDesc = tbCorrDesc.Text;
-                int roomNum = int.Parse(tbRoom_Number.Text);
+            conn.Open();
 
-                conn.Open();
+            SqlCommand cmd;
+            string sql = "UPDATE Room SET Student_ID = @sid WHERE Corridor_ID = @cor AND Room_Number = @rn";
+            cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.Add("@sid", tbSID.Text);
+            cmd.Parameters.Add("@cor", tbCID.Text);
+            cmd.Parameters.Add("@rn", tbRoom.Text);
+            cmd.ExecuteNonQuery();
 
-                string sql = $"INSERT INTO ROOM(Room_Num, Corridor_Name, Corridor_Description) VALUES(@room, @corridor, @description)";
-                command = new SqlCommand(sql, conn);
-                command.Parameters.AddWithValue("@room", roomNum);
-                command.Parameters.AddWithValue("@corridor", corName);
-                command.Parameters.AddWithValue("@description", corDesc);
-                command.ExecuteNonQuery();
-
-                conn.Close();
-            }
-            catch
-            {
-                MessageBox.Show("Text fields may not be empty");
-            }
-            
-            this.Close();
+            conn.Close();
         }
 
         private void btnBack_Click(object sender, EventArgs e)

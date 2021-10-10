@@ -29,26 +29,26 @@ namespace CyberQuest_Innovations.Forms
         private void ShowAll()
         {
 
-            conn.Open();
-            adap = new SqlDataAdapter();
-            ds = new DataSet();
+            //conn.Open();
+            //adap = new SqlDataAdapter();
+            //ds = new DataSet();
 
-            string sql = "SELECT * FROM STUDENT";
-            comm = new SqlCommand(sql, conn);
+            //string sql = "SELECT * FROM Students";
+            //comm = new SqlCommand(sql, conn);
 
-            adap.SelectCommand = comm;
-            adap.Fill(ds, "STUDENT");
+            //adap.SelectCommand = comm;
+            //adap.Fill(ds, "Students");
 
-            dbView.DataSource = ds;
-            dbView.DataMember = "STUDENT";
+            //dbView.DataSource = ds;
+            //dbView.DataMember = "Students";
 
-            conn.Close();
+            //conn.Close();
         }
 
         private void Students_Load(object sender, EventArgs e)
         {
             conn = new SqlConnection(conStr);
-            ShowAll();
+            //ShowAll();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace CyberQuest_Innovations.Forms
             Add_Student Astd = new Add_Student();
             Astd.ShowDialog();
 
-            ShowAll();
+            //ShowAll();
 
         }
 

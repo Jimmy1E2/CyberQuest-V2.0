@@ -30,76 +30,51 @@
         {
             this.lblTitle = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
-            this.tbCor_Name = new System.Windows.Forms.TextBox();
-            this.lbl2 = new System.Windows.Forms.Label();
-            this.tbRoom_Number = new System.Windows.Forms.TextBox();
+            this.tbSID = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.tbCorrDesc = new System.Windows.Forms.TextBox();
+            this.tbCID = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbRoom = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(60, 11);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitle.Location = new System.Drawing.Point(58, 9);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(220, 31);
+            this.lblTitle.Size = new System.Drawing.Size(157, 25);
             this.lblTitle.TabIndex = 1;
-            this.lblTitle.Text = "Add a new Room";
+            this.lblTitle.Text = "Assign a Room";
             // 
             // lbl1
             // 
             this.lbl1.AutoSize = true;
             this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(16, 90);
-            this.lbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl1.Location = new System.Drawing.Point(12, 73);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(124, 20);
+            this.lbl1.Size = new System.Drawing.Size(78, 17);
             this.lbl1.TabIndex = 2;
-            this.lbl1.Text = "Corridor Name:";
+            this.lbl1.Text = "Student ID:";
             // 
-            // tbCor_Name
+            // tbSID
             // 
-            this.tbCor_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCor_Name.Location = new System.Drawing.Point(212, 87);
-            this.tbCor_Name.Margin = new System.Windows.Forms.Padding(4);
-            this.tbCor_Name.Multiline = true;
-            this.tbCor_Name.Name = "tbCor_Name";
-            this.tbCor_Name.Size = new System.Drawing.Size(151, 24);
-            this.tbCor_Name.TabIndex = 4;
-            // 
-            // lbl2
-            // 
-            this.lbl2.AutoSize = true;
-            this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.Location = new System.Drawing.Point(16, 146);
-            this.lbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(122, 20);
-            this.lbl2.TabIndex = 5;
-            this.lbl2.Text = "Room Number:";
-            // 
-            // tbRoom_Number
-            // 
-            this.tbRoom_Number.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbRoom_Number.Location = new System.Drawing.Point(212, 143);
-            this.tbRoom_Number.Margin = new System.Windows.Forms.Padding(4);
-            this.tbRoom_Number.Multiline = true;
-            this.tbRoom_Number.Name = "tbRoom_Number";
-            this.tbRoom_Number.Size = new System.Drawing.Size(151, 24);
-            this.tbRoom_Number.TabIndex = 6;
+            this.tbSID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSID.Location = new System.Drawing.Point(159, 71);
+            this.tbSID.Multiline = true;
+            this.tbSID.Name = "tbSID";
+            this.tbSID.Size = new System.Drawing.Size(114, 20);
+            this.tbSID.TabIndex = 4;
             // 
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(19, 259);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClear.Location = new System.Drawing.Point(14, 210);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(100, 84);
+            this.btnClear.Size = new System.Drawing.Size(75, 68);
             this.btnClear.TabIndex = 7;
             this.btnClear.Text = "Clear Fields";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -108,10 +83,9 @@
             // btnSubmit
             // 
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(139, 259);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSubmit.Location = new System.Drawing.Point(104, 210);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(100, 84);
+            this.btnSubmit.Size = new System.Drawing.Size(75, 68);
             this.btnSubmit.TabIndex = 8;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
@@ -120,10 +94,9 @@
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(256, 259);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBack.Location = new System.Drawing.Point(192, 210);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(107, 84);
+            this.btnBack.Size = new System.Drawing.Size(80, 68);
             this.btnBack.TabIndex = 9;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -133,42 +106,58 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 201);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 112);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 20);
+            this.label1.Size = new System.Drawing.Size(80, 17);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Corridor Description:";
+            this.label1.Text = "Corridor ID:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // tbCorrDesc
+            // tbCID
             // 
-            this.tbCorrDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCorrDesc.Location = new System.Drawing.Point(212, 198);
-            this.tbCorrDesc.Margin = new System.Windows.Forms.Padding(4);
-            this.tbCorrDesc.Multiline = true;
-            this.tbCorrDesc.Name = "tbCorrDesc";
-            this.tbCorrDesc.Size = new System.Drawing.Size(151, 24);
-            this.tbCorrDesc.TabIndex = 11;
+            this.tbCID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCID.Location = new System.Drawing.Point(158, 109);
+            this.tbCID.Multiline = true;
+            this.tbCID.Name = "tbCID";
+            this.tbCID.Size = new System.Drawing.Size(114, 20);
+            this.tbCID.TabIndex = 11;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 158);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 17);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Room Number:";
+            // 
+            // tbRoom
+            // 
+            this.tbRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbRoom.Location = new System.Drawing.Point(158, 155);
+            this.tbRoom.Multiline = true;
+            this.tbRoom.Name = "tbRoom";
+            this.tbRoom.Size = new System.Drawing.Size(114, 20);
+            this.tbRoom.TabIndex = 13;
             // 
             // Add_Room
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(393, 383);
+            this.ClientSize = new System.Drawing.Size(295, 311);
             this.ControlBox = false;
-            this.Controls.Add(this.tbCorrDesc);
+            this.Controls.Add(this.tbRoom);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.tbCID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.tbRoom_Number);
-            this.Controls.Add(this.lbl2);
-            this.Controls.Add(this.tbCor_Name);
+            this.Controls.Add(this.tbSID);
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.lblTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Add_Room";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add_Room";
@@ -182,13 +171,13 @@
 
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lbl1;
-        private System.Windows.Forms.TextBox tbCor_Name;
-        private System.Windows.Forms.Label lbl2;
-        private System.Windows.Forms.TextBox tbRoom_Number;
+        private System.Windows.Forms.TextBox tbSID;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tbCorrDesc;
+        private System.Windows.Forms.TextBox tbCID;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tbRoom;
     }
 }

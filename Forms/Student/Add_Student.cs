@@ -15,25 +15,16 @@ namespace CyberQuest_Innovations.Forms
     public partial class Add_Student : Form
     {
 
-        string conStr = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = DataDirectory|\Database1.mdf; Integrated Security = True";
-        SqlConnection conn;
-        SqlCommand comm;
-
-
-        public int student_ID;
-        public int roomNumber;
-        public int event_ID;
-        public int field_of_study_ID;
-        public string name;
-        public string last_name;
-        public string cellNumber;
-        public string email;
-
         public Add_Student()
         {
             InitializeComponent();
             this.ControlBox = false;
             this.Text = String.Empty;
+
+        }
+
+        private void Add_Student_Load(object sender, EventArgs e)
+        {
 
         }
 
@@ -43,84 +34,41 @@ namespace CyberQuest_Innovations.Forms
             this.Close();
         }
 
-        private void Add_Student_Load(object sender, EventArgs e)
-        {
-            conn = new SqlConnection(conStr);
-            conn.Open();
-            conn.Close();
-        }
-
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            //Here we validate the input of each textbox and if it is valid we validate the next and so on until all the  input is validated and is correct then we close the form
-
-            this.Close();
-
-            if (int.TryParse(tbStudentID.Text, out student_ID))
+            if(tbName.Text != null && tbLast_Name.Text != null && tbCell.Text != null && tbMail.Text != null)
             {
-                if (int.TryParse(tbRoom_Number.Text, out roomNumber))
-                {
-                    if (int.TryParse(tbEventID.Text, out event_ID))
-                    {
-                        if (int.TryParse(tbField.Text, out field_of_study_ID))
-                        {
-                            name = tbName.Text;
-                            last_name = tbLastName.Text;
-                            cellNumber = tbCell.Text;
-                            email = tbEmail.Text;
+                Form1 f1 = new Form1();
+                string constring = f1.constring;
+                SqlConnection conn = new SqlConnection(constring);
 
-                            conn.Open();
+                conn.Open();
 
-                            string sql = $"INSERT INTO STUDENT (Stuent_ID, Room_Number, Event_ID, Field_of_Study_ID, Name, Last_Name, Cell_Num, Email_Address) VALUES ('{student_ID}','{roomNumber}', '{event_ID}', '{field_of_study_ID}', '{name}', '{last_name}', '{cellNumber}', '{email}')";
-                            comm = new SqlCommand(sql, conn);
-                            comm.ExecuteNonQuery();
-                            conn.Close();
+                SqlCommand cmd;
+                string sql = "INSERT INTO Students(Name, Last_Name, Cellphone_Number, [E-Mail_Address]) VALUES (@name, @lname, @cell, @mail)";
+                cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@name", tbName.Text);
+                cmd.Parameters.AddWithValue("@lname", tbLast_Name.Text);
+                cmd.Parameters.AddWithValue("@cell", tbCell.Text);
+                cmd.Parameters.AddWithValue("@mail", tbMail.Text);
+                cmd.ExecuteNonQuery();
 
-                            this.Close();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Invalid data type for Student_ID. Please try again.");
-                            tbStudentID.Clear();
-                            tbStudentID.Focus();
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid data type for Event_ID. Please try again.");
-                        tbEventID.Clear();
-                        tbEventID.Focus();
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Invalid data type for Room_Number. Please try again.");
-                    tbRoom_Number.Clear();
-                    tbRoom_Number.Focus();
-                }
+                conn.Close();
+                
             }
-            else
-            {
-                MessageBox.Show("Invalid data type for Student_ID. Please try again.");
-                tbStudentID.Clear();
-                tbStudentID.Focus();
-            }
-
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             //Clear all input and reset the focus to the first textbox
-            tbStudentID.Clear();
-            tbRoom_Number.Clear();
-            tbEventID.Clear();
-            tbField.Clear();
             tbName.Clear();
-            tbLastName.Clear();
+            tbLast_Name.Clear();
             tbCell.Clear();
-            tbEmail.Clear();
+            tbMail.Clear();
+            tbName.Clear();
+            tbCell.Clear();
 
-            tbStudentID.Focus();
+            tbName.Focus();
         }
 
 

@@ -19,6 +19,8 @@ namespace CyberQuest_Innovations
         private int tempIndex;
         private Form activeForm;
 
+        public string constring = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = |DataDirectory|\Records.mdf; Integrated Security = True";
+
         public Form1()
         {
             InitializeComponent();
@@ -177,6 +179,9 @@ namespace CyberQuest_Innovations
 
         }
 
-        
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

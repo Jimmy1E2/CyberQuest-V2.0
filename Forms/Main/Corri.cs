@@ -44,7 +44,7 @@ namespace CyberQuest_Innovations.Forms
 
         public void load()
         {
-            conn = new SqlConnection(conStr);
+           /* conn = new SqlConnection(conStr);
             conn.Open();
 
             adapt = new SqlDataAdapter();
@@ -56,7 +56,7 @@ namespace CyberQuest_Innovations.Forms
             dataGridView1.DataSource = ds;
             dataGridView1.DataMember = "SourceTable";
 
-            conn.Close();
+            conn.Close();*/
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

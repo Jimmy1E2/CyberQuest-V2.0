@@ -33,29 +33,21 @@ namespace CyberQuest_Innovations.Forms
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            try
-            {
-                conn = new SqlConnection(conStr);
+            Form1 f1 = new Form1();
+            string constring = f1.constring;
+            SqlConnection conn = new SqlConnection(constring);
 
-                string corName = cbCorridor.Text;
-                int roomNum = int.Parse(cbRoom.Text);
+            conn.Open();
 
-                conn.Open();
+            SqlCommand cmd;
+            string sql = "UPDATE Room SET Student_ID = @sid WHERE Corridor_ID = @cor AND Room_Number = @rn";
+            cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.Add("@sid", "");
+            cmd.Parameters.Add("@cor", "");
+            cmd.Parameters.Add("@rn", "");
+            cmd.ExecuteNonQuery();
 
-                string sql = $"DELETE FROM ROOM WHERE Corridor_Name = @corridor AND Room_Num = @room";
-                command = new SqlCommand(sql, conn);
-                command.Parameters.AddWithValue("@corridor", corName);
-                command.Parameters.AddWithValue("@room", roomNum);
-                command.ExecuteNonQuery();
-
-                conn.Close();
-            }
-            catch
-            {
-                MessageBox.Show("Text fields cannot be empty!"); //Exception for when text fields are empty
-            }
-            
-            this.Close();
+            conn.Close();
         }
 
 

@@ -13,8 +13,8 @@ namespace CyberQuest_Innovations.Forms
 {
     public partial class Update_Student : Form
     {
-        SqlConnection conn;
-        SqlCommand comm;
+        //SqlConnection conn;
+        //SqlCommand comm;
 
         public int student_ID;
         public int IUpdate = 0;
@@ -42,64 +42,62 @@ namespace CyberQuest_Innovations.Forms
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if (comboBox1.SelectedIndex == 0)
-            {
-                columName = "Name";
-                SUpdate = tbUDetail.Text;
-            }
-
-            if (comboBox1.SelectedIndex == 1)
-            {
-                columName = "Last_Name";
-                SUpdate = tbUDetail.Text;
-            }
-
-            if (comboBox1.SelectedIndex == 2)
-            {
-                columName = "Cell_Num";
-                SUpdate = tbUDetail.Text;
-            }
-
-            if (comboBox1.SelectedIndex == 3)
-            {
-                columName = "Email_Address";
-                SUpdate = tbUDetail.Text;
-            }
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(tbUStudent.Text, out student_ID))
-            {
-                conn.Open();
-                string sql;
-                if (IUpdate == 0)
-                {
-                    sql = $"UPDATE STUDENT SET {columName} = '{SUpdate}' WHERE Stuent_ID = {student_ID}";
-                    comm = new SqlCommand(sql, conn);
-                    comm.ExecuteNonQuery();
-                }
-                else
-                {
-                    sql = $"UPDATE STUDENT SET {columName} = {IUpdate} WHERE Stuent_ID = {student_ID}";
-                    comm = new SqlCommand(sql, conn);
-                    comm.ExecuteNonQuery();
-                }
-                conn.Close();
+            Form1 f1 = new Form1();
+            string constring = f1.constring;
+            SqlConnection conn = new SqlConnection(constring);
+            SqlCommand cmd;
+            string select;
+            conn.Open();
+            
 
-                this.Close();
-            }
-            else
+            if(comboBox1.SelectedItem.ToString() == "Name")
             {
-                MessageBox.Show("Incorrect data type for Student_ID. Please try again");
-                tbUStudent.Clear();
-                tbUStudent.Focus();
+                select = "UPDATE Students SET Name = @name WHERE Student_ID = @sid";
+                cmd = new SqlCommand(select, conn);
+                cmd.Parameters.Add("@sid", tbUStudent.Text);
+                cmd.Parameters.Add("@name", tbUDetail.Text);
+                cmd.ExecuteNonQuery();
             }
+            if(comboBox1.SelectedItem.ToString() == "Last Name")
+            {
+                select = "UPDATE Students SET Last_Name = @lname WHERE Student_ID = @sid";
+                cmd = new SqlCommand(select, conn);
+                cmd.Parameters.Add("@sid", tbUStudent.Text);
+                cmd.Parameters.Add("@lname", tbUDetail.Text);
+                cmd.ExecuteNonQuery();
+            }
+            if (comboBox1.SelectedItem.ToString() == "Cellphone Number")
+            {
+                select = "UPDATE Students SET Cellphone_Number = @cell WHERE Student_ID = @sid";
+                cmd = new SqlCommand(select, conn);
+                cmd.Parameters.Add("@sid", tbUStudent.Text);
+                cmd.Parameters.Add("@cell", tbUDetail.Text);
+                cmd.ExecuteNonQuery();
+            }
+            if (comboBox1.SelectedItem.ToString() == "E-Mail Address")
+            {
+                select = "UPDATE Students SET [E-Mail_Address] = @mail WHERE Student_ID = @sid";
+                cmd = new SqlCommand(select, conn);
+                cmd.Parameters.Add("@sid", tbUStudent.Text);
+                cmd.Parameters.Add("@mail", tbUDetail.Text);
+                cmd.ExecuteNonQuery();
+            }
+            
+
+            conn.Close();
+            this.Close();
+
         }
+
+
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            //Close this form and return to the previous
+            //Close this form and return to the main
             this.Close();
         }
 

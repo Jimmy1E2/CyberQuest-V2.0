@@ -56,6 +56,13 @@ namespace CyberQuest_Innovations.Forms
                 conn.Close();
                 
             }
+
+            tbName.Clear();
+            tbLast_Name.Clear();
+            tbCell.Clear();
+            tbMail.Clear();
+            this.Close();
+
         }
 
         private void btnClear_Click(object sender, EventArgs e)

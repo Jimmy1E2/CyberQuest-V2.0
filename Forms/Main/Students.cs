@@ -64,8 +64,6 @@ namespace CyberQuest_Innovations.Forms
             Remove_Student Rstd = new Remove_Student();
             Rstd.ShowDialog();
 
-            MessageBox.Show("You successfully removed the all records linked to the following Student_ID: " + Rstd.student_ID);
-
             load();
 
         }

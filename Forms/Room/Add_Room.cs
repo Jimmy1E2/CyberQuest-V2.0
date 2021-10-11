@@ -51,6 +51,8 @@ namespace CyberQuest_Innovations.Forms
             cmd.ExecuteNonQuery();
 
             conn.Close();
+
+            this.Close();
         }
 
         private void btnBack_Click(object sender, EventArgs e)

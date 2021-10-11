@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.dgv1 = new System.Windows.Forms.DataGridView();
-            this.tbCor_Description = new System.Windows.Forms.TextBox();
-            this.btnDescription = new System.Windows.Forms.Button();
             this.btnRAdd = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
@@ -45,26 +43,6 @@
             this.dgv1.Size = new System.Drawing.Size(483, 238);
             this.dgv1.TabIndex = 2;
             // 
-            // tbCor_Description
-            // 
-            this.tbCor_Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCor_Description.Location = new System.Drawing.Point(11, 266);
-            this.tbCor_Description.Multiline = true;
-            this.tbCor_Description.Name = "tbCor_Description";
-            this.tbCor_Description.Size = new System.Drawing.Size(484, 84);
-            this.tbCor_Description.TabIndex = 5;
-            // 
-            // btnDescription
-            // 
-            this.btnDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDescription.Location = new System.Drawing.Point(525, 266);
-            this.btnDescription.Name = "btnDescription";
-            this.btnDescription.Size = new System.Drawing.Size(160, 51);
-            this.btnDescription.TabIndex = 6;
-            this.btnDescription.Text = "Corridor Decription";
-            this.btnDescription.UseVisualStyleBackColor = true;
-            this.btnDescription.Click += new System.EventHandler(this.btnDescription_Click);
-            // 
             // btnRAdd
             // 
             this.btnRAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -72,7 +50,7 @@
             this.btnRAdd.Name = "btnRAdd";
             this.btnRAdd.Size = new System.Drawing.Size(160, 51);
             this.btnRAdd.TabIndex = 7;
-            this.btnRAdd.Text = "Assign Room";
+            this.btnRAdd.Text = "Assign a Room";
             this.btnRAdd.UseVisualStyleBackColor = true;
             this.btnRAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -83,7 +61,7 @@
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(160, 51);
             this.btnRemove.TabIndex = 8;
-            this.btnRemove.Text = "Remove a Room";
+            this.btnRemove.Text = "Unassign a Room";
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
@@ -94,21 +72,16 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnRAdd);
-            this.Controls.Add(this.btnDescription);
-            this.Controls.Add(this.tbCor_Description);
             this.Controls.Add(this.dgv1);
             this.Name = "Corri";
             this.Text = "Room";
             this.Load += new System.EventHandler(this.Corri_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox tbCor_Description;
-        private System.Windows.Forms.Button btnDescription;
         private System.Windows.Forms.Button btnRAdd;
         private System.Windows.Forms.Button btnRemove;
         public System.Windows.Forms.DataGridView dgv1;

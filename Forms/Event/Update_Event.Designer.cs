@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cal1 = new System.Windows.Forms.MonthCalendar();
             this.lbl1 = new System.Windows.Forms.Label();
             this.lbl2 = new System.Windows.Forms.Label();
             this.tbEventName = new System.Windows.Forms.TextBox();
@@ -38,26 +37,20 @@
             this.btnEClear = new System.Windows.Forms.Button();
             this.btnESubmit = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.tbID = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.event_DatePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
-            // 
-            // cal1
-            // 
-            this.cal1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cal1.Location = new System.Drawing.Point(18, 112);
-            this.cal1.MaxDate = new System.DateTime(2060, 12, 31, 0, 0, 0, 0);
-            this.cal1.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
-            this.cal1.Name = "cal1";
-            this.cal1.TabIndex = 1;
             // 
             // lbl1
             // 
             this.lbl1.AutoSize = true;
             this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(15, 86);
+            this.lbl1.Location = new System.Drawing.Point(12, 71);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(137, 17);
+            this.lbl1.Size = new System.Drawing.Size(65, 17);
             this.lbl1.TabIndex = 2;
-            this.lbl1.Text = "Select a Date to Edit";
+            this.lbl1.Text = "Event ID:";
             // 
             // lbl2
             // 
@@ -77,6 +70,7 @@
             this.tbEventName.Name = "tbEventName";
             this.tbEventName.Size = new System.Drawing.Size(227, 20);
             this.tbEventName.TabIndex = 5;
+            this.tbEventName.TextChanged += new System.EventHandler(this.tbEventName_TextChanged);
             // 
             // lbl3
             // 
@@ -136,9 +130,35 @@
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(13, 13);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(170, 25);
+            this.lblTitle.Size = new System.Drawing.Size(160, 25);
             this.lblTitle.TabIndex = 13;
-            this.lblTitle.Text = "Remove a Event";
+            this.lblTitle.Text = "Update a Event";
+            // 
+            // tbID
+            // 
+            this.tbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbID.Location = new System.Drawing.Point(12, 89);
+            this.tbID.Multiline = true;
+            this.tbID.Name = "tbID";
+            this.tbID.Size = new System.Drawing.Size(200, 20);
+            this.tbID.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 151);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 17);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Select a Date to Edit";
+            // 
+            // event_DatePicker
+            // 
+            this.event_DatePicker.Location = new System.Drawing.Point(12, 172);
+            this.event_DatePicker.Name = "event_DatePicker";
+            this.event_DatePicker.Size = new System.Drawing.Size(200, 20);
+            this.event_DatePicker.TabIndex = 16;
             // 
             // Update_Event
             // 
@@ -146,6 +166,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(548, 285);
             this.ControlBox = false;
+            this.Controls.Add(this.event_DatePicker);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tbID);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnESubmit);
             this.Controls.Add(this.btnEClear);
@@ -155,7 +178,6 @@
             this.Controls.Add(this.tbEventName);
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.lbl1);
-            this.Controls.Add(this.cal1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Update_Event";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -166,8 +188,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.MonthCalendar cal1;
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.TextBox tbEventName;
@@ -177,5 +197,8 @@
         private System.Windows.Forms.Button btnEClear;
         private System.Windows.Forms.Button btnESubmit;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.TextBox tbID;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker event_DatePicker;
     }
 }

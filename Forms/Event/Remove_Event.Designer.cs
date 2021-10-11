@@ -32,7 +32,7 @@
             this.lbl1 = new System.Windows.Forms.Label();
             this.btnEBack = new System.Windows.Forms.Button();
             this.btnERemove = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tb1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -51,14 +51,14 @@
             this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl1.Location = new System.Drawing.Point(12, 82);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(170, 17);
+            this.lbl1.Size = new System.Drawing.Size(212, 17);
             this.lbl1.TabIndex = 2;
-            this.lbl1.Text = "Select a Event to remove:";
+            this.lbl1.Text = "Event ID of the Event to remove:";
             // 
             // btnEBack
             // 
             this.btnEBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEBack.Location = new System.Drawing.Point(15, 279);
+            this.btnEBack.Location = new System.Drawing.Point(12, 168);
             this.btnEBack.Name = "btnEBack";
             this.btnEBack.Size = new System.Drawing.Size(69, 50);
             this.btnEBack.TabIndex = 10;
@@ -69,7 +69,7 @@
             // btnERemove
             // 
             this.btnERemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnERemove.Location = new System.Drawing.Point(173, 279);
+            this.btnERemove.Location = new System.Drawing.Point(170, 168);
             this.btnERemove.Name = "btnERemove";
             this.btnERemove.Size = new System.Drawing.Size(69, 50);
             this.btnERemove.TabIndex = 12;
@@ -77,21 +77,21 @@
             this.btnERemove.UseVisualStyleBackColor = true;
             this.btnERemove.Click += new System.EventHandler(this.btnERemove_Click);
             // 
-            // comboBox1
+            // tb1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(15, 102);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(227, 21);
-            this.comboBox1.TabIndex = 13;
+            this.tb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb1.Location = new System.Drawing.Point(15, 103);
+            this.tb1.Name = "tb1";
+            this.tb1.Size = new System.Drawing.Size(224, 23);
+            this.tb1.TabIndex = 13;
             // 
             // Remove_Event
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(263, 339);
+            this.ClientSize = new System.Drawing.Size(263, 236);
             this.ControlBox = false;
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.tb1);
             this.Controls.Add(this.btnERemove);
             this.Controls.Add(this.btnEBack);
             this.Controls.Add(this.lbl1);
@@ -111,6 +111,6 @@
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Button btnEBack;
         private System.Windows.Forms.Button btnERemove;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox tb1;
     }
 }

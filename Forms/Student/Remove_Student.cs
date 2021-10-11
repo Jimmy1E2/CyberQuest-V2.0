@@ -44,7 +44,7 @@ namespace CyberQuest_Innovations.Forms.Student
             conn.Open();
 
             SqlCommand cmd;
-            string sql = "DELETE FROM Event WHERE Student_ID = @studentid";
+            string sql = "DELETE FROM Students WHERE Student_ID = @studentid";
             cmd = new SqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("@studentid", tbRStudent.Text);
             cmd.ExecuteNonQuery();
@@ -52,6 +52,7 @@ namespace CyberQuest_Innovations.Forms.Student
             conn.Close();
 
             tbRStudent.Clear();
+            this.Close();
 
 
         }

@@ -43,6 +43,11 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Name",
+            "Last Name",
+            "Cellphone Number",
+            "E-Mail Address"});
             this.comboBox1.Location = new System.Drawing.Point(24, 132);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(261, 21);

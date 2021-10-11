@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace CyberQuest_Innovations
 {
@@ -125,7 +126,7 @@ namespace CyberQuest_Innovations
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Settings(), sender);
+            OpenChildForm(new Forms.Settings(), sender);    
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)

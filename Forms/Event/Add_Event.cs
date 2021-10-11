@@ -37,13 +37,15 @@ namespace CyberQuest_Innovations.Forms
             string constring = f1.constring;
             SqlConnection conn = new SqlConnection(constring);
 
+            DateTime EventDate = dtp1.Value.Date;
+
             conn.Open();
 
             SqlCommand cmd;
             string sql = "INSERT INTO Event(Event_Name, Event_Date, Event_Description) VALUES (@ename, @edate, @edesc)";
             cmd = new SqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("@ename", tbEventName.Text);
-            cmd.Parameters.AddWithValue("@edate", dtp1.Value);
+            cmd.Parameters.AddWithValue("@edate", EventDate);
             cmd.Parameters.AddWithValue("@edesc", tbDescription.Text);
             cmd.ExecuteNonQuery();
 

@@ -43,9 +43,9 @@
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(46, 9);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(171, 25);
+            this.lblTitle.Size = new System.Drawing.Size(182, 25);
             this.lblTitle.TabIndex = 1;
-            this.lblTitle.Text = "Remove a Room";
+            this.lblTitle.Text = "Unassign a Room";
             // 
             // lbl1
             // 

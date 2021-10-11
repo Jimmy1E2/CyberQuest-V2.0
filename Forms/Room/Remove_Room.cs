@@ -20,7 +20,6 @@ namespace CyberQuest_Innovations.Forms
             this.Text = String.Empty;
         }
 
-        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Luan\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances\MSSQLLocalDB\Room_DB_Test.mdf;Integrated Security=True;Connect Timeout=30";
         SqlConnection conn;
         SqlCommand command;
         SqlDataAdapter adapt;
@@ -40,20 +39,26 @@ namespace CyberQuest_Innovations.Forms
             conn.Open();
 
             SqlCommand cmd;
-            string sql = "DELETE FROM Room WHERE Corridor_ID = @cor AND Room_Number = @rn";
+            string sql = "UPDATE Room SET Student_ID = NULL WHERE Room_Number = @rn AND Corridor_ID = @cid";
             cmd = new SqlCommand(sql, conn);
-            cmd.Parameters.Add("@cor", "");
-            cmd.Parameters.Add("@rn", "");
+            
+            cmd.Parameters.Add("@rn", tbRoom.Text);
+            cmd.Parameters.Add("@cid", tbCor.Text);
             cmd.ExecuteNonQuery();
 
             conn.Close();
+
+            this.Close();
         }
 
 
 
         private void Remove_Room_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(conStr);
+            Form1 f1 = new Form1();
+            string constring = f1.constring;
+            SqlConnection conn = new SqlConnection(constring);
+
             conn.Open();
 
             string sql = $"SELECT * FROM ROOM";

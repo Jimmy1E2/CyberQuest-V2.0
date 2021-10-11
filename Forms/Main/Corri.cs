@@ -36,7 +36,7 @@ namespace CyberQuest_Innovations.Forms
 
             while (Reader.Read())
             {
-                tbCor_Description.Text = Reader.GetValue(0).ToString() + ": " + Reader.GetValue(1).ToString();
+                //tbCor_Description.Text = Reader.GetValue(0).ToString() + ": " + Reader.GetValue(1).ToString();
             }
             conn.Close();
 

@@ -37,5 +37,10 @@ namespace CyberQuest_Innovations.Forms
         {
             Process.Start("https://cyberquest.innovations.com/");
         }
+
+        private void btnGithub_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/Jimmy1E2/CyberQuest-V2.0");
+        }
     }
 }

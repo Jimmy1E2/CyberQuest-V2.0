@@ -125,3 +125,84 @@ C:\Users\Jimmy\Source\Repos\Jimmy1E2\CyberQuest-V2.0\obj\Debug\CyberQuest_Innova
 C:\Users\Jimmy\Source\Repos\Jimmy1E2\CyberQuest-V2.0\obj\Debug\CyberQuest_Innovations.csproj.CoreCompileInputs.cache
 C:\Users\Jimmy\Source\Repos\Jimmy1E2\CyberQuest-V2.0\obj\Debug\CyberQuest_Innovations.exe
 C:\Users\Jimmy\Source\Repos\Jimmy1E2\CyberQuest-V2.0\obj\Debug\CyberQuest_Innovations.pdb
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.csproj.AssemblyReference.cache
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.exe
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.pdb
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\bin\Debug\Records.mdf
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\bin\Debug\Records_log.ldf
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\bin\Debug\CyberQuest_Innovations.exe.config
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\bin\Debug\CyberQuest_Innovations.exe
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\bin\Debug\CyberQuest_Innovations.pdb
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Form1.resources
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Add_Event.resources
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Remove_Event.resources
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Add_Room.resources
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Admin.resources
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Corri.resources
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Login.resources
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Event.resources
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Records.resources
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Remove_Room.resources
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Settings.resources
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Add_Student.resources
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Student.Remove_Student.resources
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Students.resources
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Update_Student.resources
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Update_Event.resources
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Properties.Resources.resources
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.csproj.GenerateResource.cache
+C:\Users\Luan\Downloads\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\bin\Debug\Records.mdf
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\bin\Debug\Records_log.ldf
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\bin\Debug\CyberQuest_Innovations.exe.config
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\bin\Debug\CyberQuest_Innovations.exe
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\bin\Debug\CyberQuest_Innovations.pdb
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.csprojAssemblyReference.cache
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Form1.resources
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Add_Event.resources
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Remove_Event.resources
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Add_Room.resources
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Admin.resources
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Corri.resources
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Login.resources
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Event.resources
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Records.resources
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Remove_Room.resources
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Settings.resources
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Add_Student.resources
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Student.Remove_Student.resources
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Students.resources
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Update_Student.resources
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Update_Event.resources
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Properties.Resources.resources
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.csproj.GenerateResource.cache
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.exe
+C:\Users\User\OneDrive\Desktop\Year 2\Semester 2\CMPG 223\Project Final Code\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.pdb
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\bin\Debug\Records.mdf
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\bin\Debug\Records_log.ldf
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\bin\Debug\CyberQuest_Innovations.exe.config
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\bin\Debug\CyberQuest_Innovations.exe
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\bin\Debug\CyberQuest_Innovations.pdb
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.csprojAssemblyReference.cache
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Form1.resources
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Add_Event.resources
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Remove_Event.resources
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Add_Room.resources
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Admin.resources
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Corri.resources
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Login.resources
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Event.resources
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Records.resources
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Remove_Room.resources
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Settings.resources
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Add_Student.resources
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Student.Remove_Student.resources
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Students.resources
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Update_Student.resources
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Forms.Update_Event.resources
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.Properties.Resources.resources
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.csproj.GenerateResource.cache
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.csproj.CoreCompileInputs.cache
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.exe
+C:\Users\Jimmy\Desktop\CyberQuest-Final - Group 30-20211011T142534Z-001\CyberQuest-Final - Group 30\CyberQuest-Final(0.1)\CyberQuest-Final(0.1)\obj\Debug\CyberQuest_Innovations.pdb

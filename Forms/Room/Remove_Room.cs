@@ -42,8 +42,8 @@ namespace CyberQuest_Innovations.Forms
             string sql = "UPDATE Room SET Student_ID = NULL WHERE Room_Number = @rn AND Corridor_ID = @cid";
             cmd = new SqlCommand(sql, conn);
             
-            cmd.Parameters.Add("@rn", tbRoom.Text);
-            cmd.Parameters.Add("@cid", tbCor.Text);
+            cmd.Parameters.Add("@rn", cbRoom.Text);
+            cmd.Parameters.Add("@cid", cbCorridor.Text);
             cmd.ExecuteNonQuery();
 
             conn.Close();
@@ -66,13 +66,13 @@ namespace CyberQuest_Innovations.Forms
             SqlDataReader reader;
             reader = command.ExecuteReader();
             DataTable dt = new DataTable();
-            dt.Columns.Add("Corridor_Name", typeof(string)); 
-            dt.Columns.Add("Room_Num", typeof(int));
+            dt.Columns.Add("Corridor_ID", typeof(string)); 
+            dt.Columns.Add("Room_Number", typeof(int));
             dt.Load(reader);
-            //cbCorridor.ValueMember = "Corridor_Name"; //Adds Corridor_Name to the combobox
-            //cbCorridor.DataSource = dt;
-            //cbRoom.ValueMember = "Room_Num"; //Adds Room_Num to combobox
-            //cbRoom.DataSource = dt;
+            cbCorridor.ValueMember = "Corridor_ID"; //Adds Corridor_Name to the combobox
+            cbCorridor.DataSource = dt;
+            cbRoom.ValueMember = "Room_Number"; //Adds Room_Num to combobox
+            cbRoom.DataSource = dt;
 
             conn.Close();
         }

@@ -42,6 +42,7 @@
             this.btnDiscord = new System.Windows.Forms.Button();
             this.btnTelegram = new System.Windows.Forms.Button();
             this.btnWebsite = new System.Windows.Forms.Button();
+            this.btnGithub = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox2
@@ -50,7 +51,8 @@
             this.textBox2.Location = new System.Drawing.Point(12, 24);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(447, 223);
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(495, 223);
             this.textBox2.TabIndex = 11;
             // 
             // lbl1
@@ -80,7 +82,7 @@
             this.tbUser.Multiline = true;
             this.tbUser.Name = "tbUser";
             this.tbUser.ReadOnly = true;
-            this.tbUser.Size = new System.Drawing.Size(319, 20);
+            this.tbUser.Size = new System.Drawing.Size(354, 20);
             this.tbUser.TabIndex = 14;
             this.tbUser.Text = "cyberquest.innovations@gmail.com";
             // 
@@ -91,7 +93,7 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(319, 20);
+            this.textBox1.Size = new System.Drawing.Size(354, 20);
             this.textBox1.TabIndex = 15;
             this.textBox1.Text = "076 885 2361";
             // 
@@ -112,7 +114,7 @@
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(319, 27);
+            this.textBox3.Size = new System.Drawing.Size(354, 27);
             this.textBox3.TabIndex = 17;
             // 
             // label2
@@ -142,7 +144,8 @@
             this.textBox4.Location = new System.Drawing.Point(12, 280);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(447, 108);
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(495, 108);
             this.textBox4.TabIndex = 20;
             // 
             // label3
@@ -188,11 +191,23 @@
             this.btnWebsite.UseVisualStyleBackColor = true;
             this.btnWebsite.Click += new System.EventHandler(this.btnWebsite_Click);
             // 
+            // btnGithub
+            // 
+            this.btnGithub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGithub.Location = new System.Drawing.Point(385, 303);
+            this.btnGithub.Name = "btnGithub";
+            this.btnGithub.Size = new System.Drawing.Size(114, 69);
+            this.btnGithub.TabIndex = 25;
+            this.btnGithub.Text = "GitHub";
+            this.btnGithub.UseVisualStyleBackColor = true;
+            this.btnGithub.Click += new System.EventHandler(this.btnGithub_Click);
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(788, 452);
+            this.Controls.Add(this.btnGithub);
             this.Controls.Add(this.btnWebsite);
             this.Controls.Add(this.btnTelegram);
             this.Controls.Add(this.btnDiscord);
@@ -230,5 +245,6 @@
         private System.Windows.Forms.Button btnDiscord;
         private System.Windows.Forms.Button btnTelegram;
         private System.Windows.Forms.Button btnWebsite;
+        private System.Windows.Forms.Button btnGithub;
     }
 }
